@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>John Schultz</title>
+  <meta name="description" content="John Schultz — Electrical Engineering and Computer Science at UC Berkeley.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' font-family='Georgia,serif' font-style='italic'>J</text></svg>">
+  <link rel="preload" href="fonts/rt-obligat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lack-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "RT Obligat";
+      src: url("fonts/rt-obligat.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Lack";
+      src: url("fonts/lack-regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Lack";
+      src: url("fonts/lack-italic.woff2") format("woff2");
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    :root {
+      --bg: #f7f5ef;
+      --fg: #1c1b18;
+      --muted: #75716a;
+      --rule: #dcd8ce;
+      --accent: #a8431f;
+      --title: "RT Obligat", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      --body: "Lack", "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.55 var(--body);
+      letter-spacing: 0.01em;
+    }
+    main {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 80px 20px 96px;
+    }
+    h1 {
+      font-family: var(--title);
+      font-weight: 400;
+      font-size: clamp(3rem, 11vw, 4.5rem);
+      line-height: 1;
+      margin: 0 0 12px;
+      letter-spacing: -0.015em;
+    }
+    h1 em { font-style: normal; color: var(--accent); }
+    .tagline { color: var(--muted); margin: 0 0 18px; }
+    .links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; padding: 0; list-style: none; }
+    a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color .15s, text-decoration-color .15s; }
+    a:hover { color: var(--accent); text-decoration-color: currentColor; }
+    h2 {
+      font-family: var(--title);
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 60px 0 18px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .item { margin: 0 0 28px; }
+    .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+    .item-title { font-family: var(--title); font-size: 1.5rem; line-height: 1.2; }
+    .date { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .role { color: var(--muted); }
+    .item p { margin: 6px 0 0; }
+    ul.points { margin: 6px 0 0; padding-left: 18px; }
+    ul.points li { margin: 3px 0; }
+    ul.points li::marker { color: var(--muted); }
+    footer { margin-top: 72px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>John <em>Schultz</em></h1>
+    <p class="tagline">Electrical Engineering and Computer Science, University of California, Berkeley</p>
+    <ul class="links">
+      <li><a href="mailto:jtsjohn05@gmail.com">jtsjohn05@gmail.com</a></li>
+      <li><a href="https://github.com/somemone0">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/john-schultz-b3b59a217">Linkedin</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">University of California, Berkeley</span>
+        <span class="date">Expected May 2027</span>
+      </div>
+      <div class="role">Bachelor of Science, Electrical Engineering and Computer Science · Berkeley, CA</div>
+      <ul class="points">
+        <li>GPA: 3.7. Coursework: CS 61B (Data Structures), CS 162 (Operating Systems), CS 170 (Algorithms), CS 61C (Computer Architecture), CS 189 (Machine Learning), EECS 151 (Digital Design and Integrated Circuits).</li>
+        <li>News and Data Reporter, Daily Californian. Member, Political Computer Science. Individual Contributor, Berkeley Tech &amp; Justice Lab</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Amazon</span>
+        <span class="date">May 2026 – August 2026</span>
+      </div>
+      <div class="role">Software Development Engineer Intern, ML Infrastructure · Bellevue, WA</div>
+      <ul class="points">
+        <li>Built a Kubernetes/AWS resource layer for DeepTS, the production deep learning library that powers training and batch inference for billions of Amazon forecasting decisions, improving reliability and resource utilization of distributed compute.</li>
+        <li>Ideated and shipped an internal monitoring service for distributed training runs, giving scientists a single place to diagnose time-series training jobs over many services and runtimes.</li>
+        <li>Built telemetry quantifying cross-org use of DeepTS, used by leadership to inform business decisions.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Amazon</span>
+        <span class="date">May 2025 – August 2025</span>
+      </div>
+      <div class="role">Software Development Engineer Intern · Bellevue, WA</div>
+      <ul class="points">
+        <li>Designed and trained an ML model (text embeddings, XGBoost, Census data) to predict customer adoption of Add To Delivery, an Amazon delivery feature.</li>
+        <li>Engineered a Spark-based data ingestion and feature engineering pipeline to create replicable data for model training.</li>
+        <li>Shipped a Java/React frontend to surface model predictions and counterfactuals for feature adoption, used to inform rollout strategy.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Office of Management and Budget (OMB)</span>
+        <span class="date">September 2024 – December 2024</span>
+      </div>
+      <div class="role">Software Engineering / Data Intern · Washington, DC</div>
+      <ul class="points">
+        <li>Built automation features with Java and Python to validate data submission from 71 federal services across 38 agencies.</li>
+        <li>Prototyped NLP analysis of customer reviews for federal agencies, presenting topic-based sentiment analysis results to a large partner agency.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">UC Berkeley School of Information, Global Opportunity Lab</span>
+        <span class="date">February 2026 – May 2026</span>
+      </div>
+      <div class="role">Student Researcher, Prof. Joshua Blumenstock · Berkeley, CA</div>
+      <ul class="points">
+        <li>Designed a featurization pipeline to predict eligible cash aid recipients in Togo from call detail records, raising model accuracy from the lab&rsquo;s prior baseline.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Dan Garcia&rsquo;s R&amp;D Group</span>
+        <span class="date">January 2024 – May 2024</span>
+      </div>
+      <ul class="points">
+        <li>Worked on GradeView, an application to represent CS10&rsquo;s unique mastery-based learning system to students.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <div class="item-head">
+        <a class="item-title" href="https://data.dailycal.org/2026-09-24-actransit">AC Transit Ridership</a>
+        <a class="date" href="https://github.com/somemone0/ac-transit-ridership">github</a>
+      </div>
+      <p>Created a web application to map the recovery of AC Transit, the East Bay&rsquo;s transit agency. The data is simplified from a 50GB response to a public records request I made. Includes origin-destination estimation and data imputation to cover missing data. Made with Next.js and Python. Used Google Cloud instances, storage buckets, and Cloud Run to process and serve data.</p>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">PRA Machine</span>
+        <span class="date">Built for the Berkeley Tech and Justice Lab</span>
+      </div>
+      <p>The Berkeley Tech and Justice Lab creates tools to help law and justice advocates perform their jobs. Many stakeholders file public records requests, and need a way to organize requests and draft verbiage for letters sent to public agencies. PRA Machine is a web application that uses an LLM to draft request letters and implements an agentic inbox to track requests.</p>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <a class="item-title" href="https://github.com/somemone0/berk-open-rooms">Berkeley Open Rooms Finder</a>
+      </div>
+      <p>Built a React and Flask mobile app that finds empty rooms to study in at the UC Berkeley campus. Scrapes Berkeleytime, a third-party application with access to UC Berkeley class catalogs. Includes a SQLite database to track rooms taken not in the class catalog for all users.</p>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 John Schultz</footer>
+</main>
+</body>
+</html>
